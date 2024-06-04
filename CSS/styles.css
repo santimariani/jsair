@@ -1,0 +1,92 @@
+:root {
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    font-family: var(--font-family);
+    font-size: 5vh;    
+}
+
+.flexCenter {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    width: 75vw;
+    height: 75vh;
+    grid-template-rows: 1fr 5fr;
+    background: rgba(43, 36, 36, 0.614);
+}
+
+.boardHeader {
+    align-items: center;
+    justify-content: flex-end;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    padding-left: 1vh;
+    background: rgb(255, 183, 0); 
+    font-size: x-large;
+    font-weight:bolder;
+    color: black;
+    margin: 0;
+    height: 10vh;
+}
+
+.boardHeader p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2vw;
+    font-size: 4vh;
+    margin: 0;
+}
+
+.boardHeader img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: rotate(45deg);
+    height: 7vh;
+}
+
+.boardMain {
+    display: grid;
+    grid-row: 2;
+    grid-template-rows: repeat(10, 1fr);
+    padding-left: 5vh;
+    padding-right: 5vh;
+    height: 50vh;
+    align-items: center;
+    row-gap: .25vh;
+}
+
+.boardTitles {
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 5fr 1.5fr 1fr 2fr;
+    padding-left: 1vh;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 2vh;
+    color:aliceblue
+}
+
+.boardItems {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1.5fr 1fr 2fr;
+    background-color: rgba(112, 107, 136, 0.485);
+    border-radius: 5px;
+    font-size: 2vh;
+    font-weight: bolder;
+    height: 5vh;
+    padding-left: 1vh;
+    align-content: center;
+}
